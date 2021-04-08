@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="This is a Portfolio of projects related with machine learning, neural networks artificial intelligence and programming..! Designed by Felix Figueroa">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Lenobit</title>
+    <link rel="icon" href="./assets/icons/logo.ico">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <!-- Goolge Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/main.js"></script>
+<body>
+    <!-- Margin Footer Pined -->
+    <section class="margin-footer">
+        <header>
+            <div class="header-grid-container">
+                <div class="item-menu">
+                    <nav>
+                        <div class="wrapper">
+                            <div class="logo">
+                                <a href="index.html"><img src="./assets/icons/brand.png" alt=""></a>
+                                <a href="index.html">Lenobit</a>  
+                            </div>
+                            <input type="radio" name="slide" id="menu-btn">
+                            <input type="radio" name="slide" id="cancel-btn">
+                            <ul class= "nav-links">
+                                <label for="cancel-btn" class="btn cancel-btn"><i class="fas fa-times"></i></label>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About me</a></li>
+                                <li>
+                                    <a href="#" class="desktop-item">Lenobit <i class="fas fa-caret-down"></i></a>
+                                    <input type="checkbox" id="showDrop">
+                                    <label for="showDrop" class="mobile-item">Lenobit</label>
+                                        <ul class="drop-menu">
+                                            <li><a href="#">About</a></li>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">Help</a></li>
+                                            <li><a href="#">Terms & Consitions</a></li>
+                                            <li><a href="#">Contact</a></li>  
+                                        </ul>
+                                </li>
+                                <li><a href="#"class="desktop-item">Projects <i class="fas fa-caret-down"></i></a>
+                                    <input type="checkbox" id="showMega">
+                                    <label for="showMega" class="mobile-item">Projects</label>
+                                    <div class="mega-box">
+                                        <div class="content">
+                                            <div class="row">
+                                                <img src="./assets/img/menu.jpg" alt="menu de proyectos">
+                                            </div>
+                                            <div class="row">
+                                                <header><i class="fas fa-atom"></i> Data Science</header>
+                                                <ul class="mega-links">
+                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Debug Data.</a></li>
+                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Customer Segmentation.</a></li>
+                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Graphics and Algorithms.</a></li>
+                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Business Model.</a></li>
+                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Predictive Models.</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row">
+                                                <header><i class="fas fa-robot"></i> Machine Learning</header>
+                                                <ul class="mega-links">
+                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Facial Recognition.</a></li>
+                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Efficient Similarity Search and Clustering of Dense Vectors.</a></li>
+                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Generalized Sequence to Sequence Models.</a></li>
+                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Hardware-accelerated for Autonomous Vehicles.</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row" id="row3">
+                                                <header><i class="fas fa-brain"></i> Artificial Intelligence</header>
+                                                <ul class="mega-links">
+                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Intelligent AI Chatbot.</a></li>
+                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Image Classification with Neural Networks.</a></li>
+                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Stock Price Prediction.</a></li>
+                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Facial Emotion Recognition and Detection.</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+                            <div class="search">
+                                <input type="text" placeholder=" Search" required>
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                            </div>                
+                        </div>           
+                    </nav>
+                </div>
+                <div class="item-banner" id="particles-js">
+                    <div class="banner">
+                        <h1>Lenobit</h1>
+                        <h2>La Mejor Tecnolog&iacutea para Controlar tu Salud</h2>
+                        <h2>est&aacute en tus manos...</h2>
+                        <a href="#">Read More</a>
+                        <h2>Un Integraci&oacuten TOTAL para toda la salud</h2>
+                        <h2>F&AacuteCIL , R&AacutePIDO y SEGURO para todos</h2>
+                        <h2>Descarga la APP y Disfr&uacutetala..!</h2>
+                    </div>
+                </div>
+                <div class="item-img-1">
+                    <img src="./assets/img/canvas.png" alt="Lenobit">
+                </div>
+                <div class="item-img-2">
+                    <div class="servicios">
+                        <ul><h2>Servivcios Principales:</h2>
+                            <li>- Ranking Medical Network.</li>
+                            <li>- Turno online Smart Fast.</li>
+                            <li>- Historial Cl&iacutenico Predictivo.</li>
+                            <li>- Consultas por Chat Privado.</li>
+                            <li>- Gestor de Recipe M&eacutedico.</li>
+                            <li>- An&aacutelisis de Resultados.</li>
+                            <li>- FamaShop Smart.</li>
+                            <li>- Control de Seguridad.</li>
+                            <li>- Gestor de Documentos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- Title Ribbon Top -->
+            <div class="title-top">
+                <h1>The Top Ten Projects</h1>
+            </div>
+            <!-- Swiper Card -->
+            <section class="swiper">
+                <div class="banner-main"></div>
+                <!-- Card Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="title-slide">
+                                <h2>Top 1</h2>
+                            </div>
+                            <div class="card-top">
+                                <div class= "card-title">
+                                    <h2><i class="fas fa-project-diagram"></i> Proyecto Lenobit</h2>
+                                </div>
+                                <div class="card-top-video">
+                                    <video src="./assets/video/Logo Firma.mp4"controls preload="auto"></video>
+                                    <figcaption>
+                                        <h3>Que es Lenobit ?</h3>Es un proyecto tecnologico en desarrollo que ofrece una mejor experiencia de usuario en el area de la salud y la medicina.
+                                    </figcaption>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title-slide">
+                                <h2>Top 2</h2>
+                            </div>
+                            <div class="card-top">
+                                <div class= "card-title">
+                                    <h2><i class="fas fa-project-diagram"></i> Artificial Intelligence</h2>
+                                </div>
+                                <figure class="card-img">
+                                    <img src="./assets/img/img_1.jpg" alt="imagen">
+                                    <figcaption>
+                                        <h3>AI Virtual Assistant</h3>Es un asistente virtual basado en inteligencia artificial programado con Python, por su flexibilidad puede ser integrado en cualquiera aplicacion tecnologica.
+                                    </figcaption>
+                                </figure>    
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title-slide">
+                                <h2>Top 3</h2>
+                            </div>
+                            <div class="card-top">
+                                <div class= "card-title">
+                                    <h2><i class="fas fa-project-diagram"></i> Data Science</h2>
+                                </div>
+                                <figure class="card-img">
+                                    <img src="./assets/img/img_2.jpg" alt="imagen">
+                                    <figcaption>
+                                        <h3>Data Science</h3>Este es proyecto que resume el potencial de Numpy, Matplotlib y Pandas para sacarle provecho al maximo.
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title-slide">
+                                <h2>Top 4</h2>
+                            </div>
+                            <div class="card-top">
+                                <div class= "card-title">
+                                    <h2><i class="fas fa-project-diagram"></i> Artificial Intelligence</h2>
+                                </div>
+                                <figure class="card-img">
+                                    <img src="./assets/img/img_3.jpg" alt="imagen">
+                                    <figcaption>
+                                        <h3>Facial Recognition</h3>Esto es posible mediante un análisis de las características faciales extraídas de una imagen o de un fotograma clave de una fuente de vídeo, luego es comparada con una base de datos.
+                                    </figcaption>
+                                </figure>    
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title-slide">
+                                <h2>Top 5</h2>
+                            </div>
+                            <div class="card-top">
+                                <div class= "card-title">
+                                    <h2><i class="fas fa-project-diagram"></i> Data Science</h2>
+                                </div>
+                                <figure class="card-img">
+                                    <img src="./assets/img/img_4.jpg" alt="imagen">
+                                    <figcaption>
+                                        <h3>Stock Price Prediction</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit id commodi, voluptatem aut, halor nobis maiores est aliquam modi vero sit vitae.
+                                    </figcaption>
+                                </figure>    
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title-slide">
+                                <h2>Top 6</h2>
+                            </div>
+                            <div class="card-top">
+                                <div class= "card-title">
+                                    <h2><i class="fas fa-project-diagram"></i> Machine Learning</h2>
+                                </div>
+                                <figure class="card-img">
+                                    <img src="./assets/img/img_5.jpg" alt="imagen">
+                                    <figcaption>
+                                        <h3>Algorithms Predictive</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit id commodi, voluptatem aut, halor nobis maiores est aliquam modi vero sit vitae.
+                                    </figcaption>
+                                </figure>    
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title-slide">
+                                <h2>Top 7</h2>
+                            </div>
+                            <div class="card-top">
+                                <div class= "card-title">
+                                    <h2><i class="fas fa-project-diagram"></i> Artificial Intelligence</h2>
+                                </div>
+                                <figure class="card-img">
+                                    <img src="./assets/img/img_6.jpg" alt="imagen">
+                                    <figcaption>
+                                        <h3> Protocol SHA256</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit id commodi, voluptatem aut, halor nobis maiores est aliquam modi vero sit vitae.
+                                    </figcaption>
+                                </figure>    
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title-slide">
+                                <h2>Top 8</h2>
+                            </div>
+                            <div class="card-top">
+                                <div class= "card-title">
+                                    <h2><i class="fas fa-project-diagram"></i> Artificial Intelligence</h2>
+                                </div>
+                                <figure class="card-img">
+                                    <img src="./assets/img/img_7.jpg" alt="imagen">
+                                    <figcaption>
+                                        <h3>Neural Networks</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit id commodi, voluptatem aut, halor nobis maiores est aliquam modi vero sit vitae.
+                                    </figcaption>
+                                </figure>    
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title-slide">
+                                <h2>Top 9</h2>
+                            </div>
+                            <div class="card-top">
+                                <div class= "card-title">
+                                    <h2><i class="fas fa-project-diagram"></i> Data Science</h2>
+                                </div>
+                                <figure class="card-img">
+                                    <img src="./assets/img/img_8.jpg" alt="imagen">
+                                    <figcaption>
+                                        <h3>Graphics & Business</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit id commodi, voluptatem aut, halor nobis maiores est aliquam modi vero sit vitae.
+                                    </figcaption>
+                                </figure>    
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title-slide">
+                                <h2>Top 10</h2>
+                            </div>
+                            <div class="card-top">
+                                <div class= "card-title">
+                                    <h2><i class="fas fa-project-diagram"></i> Artificial Intelligence</h2>
+                                </div>
+                                <figure class="card-img">
+                                    <img src="./assets/img/img_5.jpg" alt="imagen">
+                                    <figcaption>
+                                        <h3>AI Chatbot</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit id commodi, voluptatem aut, halor nobis maiores est aliquam modi vero sit vitae.
+                                    </figcaption>
+                                </figure>      
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+            <div class="swiper-pagination"></div</div>
+            </section>
+            <!-- Title Ribbon Gallery -->
+            <div class="title-gallery">
+                <h1>Projects Gallery</h1>
+            </div>
+            <!-- Card Gallery -->
+            <section class="gallery">
+                <div class="card-container">
+                    <div class="choose-category">
+                        <nav class="nav-gallery">
+                            <div class="items">
+                                <span class="item active" data-name="all">All</span>
+                                <span class="item" data-name="ai">Artificial Intelligence</span>
+                                <span class="item" data-name="ds">Data Science</span>
+                                <span class="item" data-name="ml">Machine Learning</span>
+                                <span class="item" data-name="ln">Lenobit</span>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="card" data-name="ds">
+                        <div class= "card-title" id="ds">
+                            <h2><i class="fas fa-project-diagram"></i> Data Science</h2>
+                        </div>
+                        <figure class="card-img">
+                            <img src="./assets/img/img_1.jpg" alt="imagen">
+                            <figcaption>
+                                <h3>Debug Data</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit id commodi.
+                            </figcaption>
+                        </figure>    
+                    </div>
+                    <div class="card" data-name="ln">
+                        <div class= "card-title" id="ln">
+                            <h2><i class="fas fa-project-diagram"></i> Lenobit</h2>
+                        </div>
+                        <div class="card-video">
+                            <video src="./assets/video/Logo Firma.mp4"controls preload="auto"></video>
+                            <figcaption>
+                                <h3>Lenobit</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur adipisicfugiusantium architecto dolor.
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="card" data-name="ai">
+                        <div class= "card-title" id="ai">
+                            <h2><i class="fas fa-project-diagram"></i> Artificial Intelligence</h2>
+                        </div>
+                        <figure class="card-img">
+                            <img src="./assets/img/img_3.jpg" alt="imagen">
+                            <figcaption>
+                                <h3>Stock Price Prediction</h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat porro voluptates numquam ducimus eos optio.
+                            </figcaption>
+                        </figure>   
+                    </div>
+                    <div class="card" data-name="ml">
+                        <div class= "card-title" id="ml">
+                            <h2><i class="fas fa-project-diagram"></i> Machine Learning</h2>
+                        </div>
+                        <figure class="card-img">
+                            <img src="./assets/img/img_4.jpg" alt="imagen">
+                            <figcaption>
+                                <h3>Hardware-Accelerated</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit id commodi.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="card" data-name="ds">
+                        <div class= "card-title" id="ds">
+                            <h2><i class="fas fa-project-diagram"></i> Data Science</h2>
+                        </div>
+                        <figure class="card-img">
+                            <img src="./assets/img/img_5.jpg" alt="imagen">
+                            <figcaption>
+                                <h3>Graphics & Algorithms</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur bis maiores est aliquam modi vero sit vitae.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="card" data-name="ln">
+                        <div class= "card-title" id="ln">
+                            <h2><i class="fas fa-project-diagram"></i> Lenobit</h2>
+                        </div>
+                        <figure class="card-img">
+                            <img src="./assets/img/img_6.jpg" alt="imagen">
+                            <figcaption>
+                                <h3>SHA256 Protocol</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur bis maiores est aliquam modi vero sit vitae.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="card" data-name="ai">
+                        <div class= "card-title" id="ai">
+                            <h2><i class="fas fa-project-diagram"></i> Artificial Intelligence</h2>
+                        </div>
+                        <figure class="card-img">
+                            <img src="./assets/img/img_7.jpg" alt="imagen">
+                            <figcaption>
+                                <h3>Intelligent AI Chatbot</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo praesentium ipsa, vero doloribus veritatis harum.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="card" data-name="ds">
+                        <div class= "card-title" id="ds">
+                            <h2><i class="fas fa-project-diagram"></i> Data Science</h2>
+                        </div>
+                        <figure class="card-img">
+                            <img src="./assets/img/img_8.jpg" alt="imagen">
+                            <figcaption>
+                                <h3>Business Model</h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla iste similique quisquam fuga rem! Hic pariatur ipsum.
+                            </figcaption>
+                        </figure>       
+                    </div>
+                    <div class="card" data-name="ml">
+                        <div class= "card-title" id="ml">
+                            <h2><i class="fas fa-project-diagram"></i> Machine Learning</h2>
+                        </div>
+                        <figure class="card-img">
+                            <img src="./assets/img/img_9.jpg" alt="imagen">
+                            <figcaption>
+                                <h3>Efficient Search</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur bis maiores est aliquam modi vero sit vitae.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="card" data-name="ai">
+                        <div class= "card-title" id="ai">
+                            <h2><i class="fas fa-project-diagram"></i> Artificial Intelligence</h2>
+                        </div>
+                        <figure class="card-img">
+                            <img src="./assets/img/img_10.jpg" alt="imagen">
+                            <figcaption>
+                                <h3>Facial Recognition</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur bis maiores est aliquam modi vero sit vitae.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="card" data-name="ln">
+                        <div class= "card-title" id="ln">
+                            <h2><i class="fas fa-project-diagram"></i> Lenobit</h2>
+                        </div>
+                        <figure class="card-img">
+                            <img src="./assets/img/img_11.jpg" alt="imagen">
+                            <figcaption>
+                                <h3>Data Management</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo praesentium ipsa, vero doloribus veritatis harum.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="card" data-name="ds">
+                        <div class= "card-title" id="ds">
+                            <h2><i class="fas fa-project-diagram"></i> Data Science</h2>
+                        </div>
+                        <figure class="card-img">
+                            <img src="./assets/img/img_12.jpg" alt="imagen">
+                            <figcaption>
+                                <h3>Predictive Models</h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla iste similique quisquam fuga rem! Hic pariatur ipsum.
+                            </figcaption>
+                        </figure>       
+                    </div>     
+                </div>
+             </section>
+        </main> 
+    </section>
+    <footer>
+        <div class="fixed-footer-container">
+            <div class="sec-about">
+                <h2>About me</h2>
+                <p>I'm Mechatronic Engineer with experience in technology projects management,  specially in food industry field, I'm passionate about 3D design in SolidWorks. Recently I'm working in a new technological field and I'm developing new projects in the area of Data Science, Machine Learning & Artificial Intelligence, if you want to know more...press to here <a href="#"><i class="fas fa-angle-double-right"></i></a>
+                </p>
+                <ul class="sci">
+                    <li>
+                        <a href="https://www.linkedin.com/in/felix-manuel-figueroa-3b91551b/"class="linkedin"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/FMFigueroa" class="github"><i class="fab fa-github"></i></a>            
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/FelixM_Figueroa" class="twitter"><i class="fab fa-twitter-square"></i></a>          
+                    </li>
+                    <li>
+                        <a href="https://t.me/SolidworksArgentina" class="telegram"><i class="fab fa-telegram"></i></a>      
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/SolidworksArgentinaOfficial" class="facebook"> <i class="fab fa-facebook-square"></i></a>        
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCl51r-34GpQtP6WpqAR844Q" class="youtube"><i class="fab fa-youtube"></i></a>     
+                    </li>                                                
+                </ul>
+            </div>
+            <hr id="center">
+            <div class="sec-quickLinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms & Consitions</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <hr id="right">
+            <div class="sec-contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span>
+                        <span>Av. Directorio 1088 <br>
+                        Caballito, CP 1424, <br>Buenos Aires | Argentina.</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-volume" aria-hidden="true"></i></span>
+                        <p><a href="tel:+5491133851987">(+54) 911 - 33851987.</a><br></p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope-open-text" aria-hidden="true"></i></span>
+                        <p><a href="mailto:felixmanuelfigueroa@gmail.com">felixmanuelfigueroa@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrightText">
+        <p>Copyright © Felix Figueroa. All Rights Reserved.</p>
+    </div>
+    <!-- scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/filter.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+        rotate: 0,
+        stretch: 30,
+        depth: 100,
+        modifier: 3,
+        slideShadows: true,
+        },
+        loop: true,
+        pagination: {
+        el: '.swiper-pagination',
+        },
+    });
+    </script> 
+</body>
+</html>
