@@ -1,550 +1,710 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="index,follow">
-    <meta name="description" content="This is a Portfolio of projects related with machine learning, neural networks artificial intelligence and programming..! Designed by Felix Figueroa">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>Lenobit</title>
-    <link rel="icon" href="./assets/icons/logo.ico">
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <!-- Goolge Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./js/jquery-3.6.0.js"></script>
-    <script src="./js/main.js"></script>
-<body>
-    <!-- Margin Footer Pined -->
-    <section class="margin-footer">
-        <header>
-            <div class="header-grid-container">
-                <div class="item-menu">
-                    <nav>
-                        <div class="wrapper">
-                            <div class="logo">
-                                <a href="index.html"><img src="./assets/icons/brand.png" alt=""></a>
-                                <a href="index.html">Lenobit</a>  
-                            </div>
-                            <input type="radio" name="slide" id="menu-btn">
-                            <input type="radio" name="slide" id="cancel-btn">
-                            <ul class= "nav-links">
-                                <label for="cancel-btn" class="btn cancel-btn"><i class="fas fa-times"></i></label>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About me</a></li>
-                                <li>
-                                    <a href="#" class="desktop-item">Lenobit <i class="fas fa-caret-down"></i></a>
-                                    <input type="checkbox" id="showDrop">
-                                    <label for="showDrop" class="mobile-item">Lenobit</label>
-                                        <ul class="drop-menu">
-                                            <li><a href="#">About</a></li>
-                                            <li><a href="#">FAQ</a></li>
-                                            <li><a href="#">Privacy Policy</a></li>
-                                            <li><a href="#">Help</a></li>
-                                            <li><a href="#">Terms & Consitions</a></li>
-                                            <li><a href="#">Contact</a></li>  
-                                        </ul>
-                                </li>
-                                <li><a href="#"class="desktop-item">Projects <i class="fas fa-caret-down"></i></a>
-                                    <input type="checkbox" id="showMega">
-                                    <label for="showMega" class="mobile-item">Projects</label>
-                                    <div class="mega-box">
-                                        <div class="content">
-                                            <div class="row">
-                                                <img src="./assets/img/menu.jpg" alt="menu de proyectos">
-                                            </div>
-                                            <div class="row">
-                                                <header><i class="fas fa-atom"></i> Data Science</header>
-                                                <ul class="mega-links">
-                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Debug Data.</a></li>
-                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Customer Segmentation.</a></li>
-                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Graphics and Algorithms.</a></li>
-                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Business Model.</a></li>
-                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Predictive Models.</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="row">
-                                                <header><i class="fas fa-robot"></i> Machine Learning</header>
-                                                <ul class="mega-links">
-                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Facial Recognition.</a></li>
-                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Efficient Similarity Search and Clustering of Dense Vectors.</a></li>
-                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Generalized Sequence to Sequence Models.</a></li>
-                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Hardware-accelerated for Autonomous Vehicles.</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="row" id="row3">
-                                                <header><i class="fas fa-brain"></i> Artificial Intelligence</header>
-                                                <ul class="mega-links">
-                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Intelligent AI Chatbot.</a></li>
-                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Image Classification with Neural Networks.</a></li>
-                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Stock Price Prediction.</a></li>
-                                                    <li><a href="#"><i class="fas fa-project-diagram"></i> Facial Emotion Recognition and Detection.</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-                            <div class="search">
-                                <input type="text" placeholder=" Search" required>
-                                <i class="fas fa-search" aria-hidden="true"></i>
-                            </div>                
-                        </div>           
-                    </nav>
-                </div>
-                <div class="item-banner" id="particles-js">
-                    <div class="banner">
-                        <h1>Lenobit</h1>
-                        <h2>La Mejor Tecnolog&iacutea para Controlar tu Salud</h2>
-                        <h2>est&aacute en tus manos...</h2>
-                        <a href="#">Read More</a>
-                        <h2>Un Integraci&oacuten TOTAL para toda la salud</h2>
-                        <h2>F&AacuteCIL , R&AacutePIDO y SEGURO para todos</h2>
-                        <h2>Descarga la APP y Disfr&uacutetala..!</h2>
-                    </div>
-                </div>
-                <div class="item-img-1">
-                    <img src="./assets/img/canvas.png" alt="Lenobit">
-                </div>
-                <div class="item-img-2">
-                    <div class="servicios">
-                        <ul><h2>Servicios Principales:</h2>
-                            <li>- Ranking Medical Network.</li>
-                            <li>- Turno online Smart Fast.</li>
-                            <li>- Historial Cl&iacutenico Predictivo.</li>
-                            <li>- Consultas por Chat Privado.</li>
-                            <li>- Gestor de Recipe M&eacutedico.</li>
-                            <li>- An&aacutelisis de Resultados.</li>
-                            <li>- FamaShop Smart.</li>
-                            <li>- Control de Seguridad.</li>
-                            <li>- Gestor de Documentos.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <main>
-            <!-- Title Ribbon Top -->
-            <div class="title-top">
-                <h1>The Top Ten Projects</h1>
-            </div>
-            <!-- Swiper Card -->
-            <section class="swiper">
-                <div class="banner-main"></div>
-                <!-- Card Swiper -->
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="title-slide">
-                                <h2>Top 1</h2>
-                            </div>
-                            <div class="card-top">
-                                <div class= "card-title">
-                                    <h2><i class="fas fa-project-diagram"></i> Proyecto Lenobit</h2>
-                                </div>
-                                <div class="card-top-video">
-                                    <video src="./assets/video/Logo Firma.mp4"controls preload="auto"></video>
-                                    <figcaption>
-                                        <h3>Que es Lenobit ?</h3>Es un proyecto tecnologico en desarrollo que ofrece una mejor experiencia de usuario en el area de la salud y la medicina.
-                                    </figcaption>
-                                </div>  
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="title-slide">
-                                <h2>Top 2</h2>
-                            </div>
-                            <div class="card-top">
-                                <div class= "card-title">
-                                    <h2><i class="fas fa-project-diagram"></i> Artificial Intelligence</h2>
-                                </div>
-                                <figure class="card-img">
-                                    <img src="./assets/img/img_1.jpg" alt="imagen">
-                                    <figcaption>
-                                        <h3>AI Virtual Assistant</h3>Es un asistente virtual basado en inteligencia artificial programado con Python, por su flexibilidad puede ser integrado en cualquiera aplicacion tecnologica.
-                                    </figcaption>
-                                </figure>    
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="title-slide">
-                                <h2>Top 3</h2>
-                            </div>
-                            <div class="card-top">
-                                <div class= "card-title">
-                                    <h2><i class="fas fa-project-diagram"></i> Data Science</h2>
-                                </div>
-                                <figure class="card-img">
-                                    <img src="./assets/img/img_2.jpg" alt="imagen">
-                                    <figcaption>
-                                        <h3>Data Science</h3>Este es proyecto que resume el potencial de Numpy, Matplotlib y Pandas para sacarle provecho al maximo.
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="title-slide">
-                                <h2>Top 4</h2>
-                            </div>
-                            <div class="card-top">
-                                <div class= "card-title">
-                                    <h2><i class="fas fa-project-diagram"></i> Artificial Intelligence</h2>
-                                </div>
-                                <figure class="card-img">
-                                    <img src="./assets/img/img_3.jpg" alt="imagen">
-                                    <figcaption>
-                                        <h3>Facial Recognition</h3>Esto es posible mediante un análisis de las características faciales extraídas de una imagen o de un fotograma clave de una fuente de vídeo, luego es comparada con una base de datos.
-                                    </figcaption>
-                                </figure>    
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="title-slide">
-                                <h2>Top 5</h2>
-                            </div>
-                            <div class="card-top">
-                                <div class= "card-title">
-                                    <h2><i class="fas fa-project-diagram"></i> Data Science</h2>
-                                </div>
-                                <figure class="card-img">
-                                    <img src="./assets/img/img_4.jpg" alt="imagen">
-                                    <figcaption>
-                                        <h3>Stock Price Prediction</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit id commodi, voluptatem aut, halor nobis maiores est aliquam modi vero sit vitae.
-                                    </figcaption>
-                                </figure>    
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="title-slide">
-                                <h2>Top 6</h2>
-                            </div>
-                            <div class="card-top">
-                                <div class= "card-title">
-                                    <h2><i class="fas fa-project-diagram"></i> Machine Learning</h2>
-                                </div>
-                                <figure class="card-img">
-                                    <img src="./assets/img/img_5.jpg" alt="imagen">
-                                    <figcaption>
-                                        <h3>Algorithms Predictive</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit id commodi, voluptatem aut, halor nobis maiores est aliquam modi vero sit vitae.
-                                    </figcaption>
-                                </figure>    
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="title-slide">
-                                <h2>Top 7</h2>
-                            </div>
-                            <div class="card-top">
-                                <div class= "card-title">
-                                    <h2><i class="fas fa-project-diagram"></i> Artificial Intelligence</h2>
-                                </div>
-                                <figure class="card-img">
-                                    <img src="./assets/img/img_6.jpg" alt="imagen">
-                                    <figcaption>
-                                        <h3> Protocol SHA256</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit id commodi, voluptatem aut, halor nobis maiores est aliquam modi vero sit vitae.
-                                    </figcaption>
-                                </figure>    
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="title-slide">
-                                <h2>Top 8</h2>
-                            </div>
-                            <div class="card-top">
-                                <div class= "card-title">
-                                    <h2><i class="fas fa-project-diagram"></i> Artificial Intelligence</h2>
-                                </div>
-                                <figure class="card-img">
-                                    <img src="./assets/img/img_7.jpg" alt="imagen">
-                                    <figcaption>
-                                        <h3>Neural Networks</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit id commodi, voluptatem aut, halor nobis maiores est aliquam modi vero sit vitae.
-                                    </figcaption>
-                                </figure>    
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="title-slide">
-                                <h2>Top 9</h2>
-                            </div>
-                            <div class="card-top">
-                                <div class= "card-title">
-                                    <h2><i class="fas fa-project-diagram"></i> Data Science</h2>
-                                </div>
-                                <figure class="card-img">
-                                    <img src="./assets/img/img_8.jpg" alt="imagen">
-                                    <figcaption>
-                                        <h3>Graphics & Business</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit id commodi, voluptatem aut, halor nobis maiores est aliquam modi vero sit vitae.
-                                    </figcaption>
-                                </figure>    
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="title-slide">
-                                <h2>Top 10</h2>
-                            </div>
-                            <div class="card-top">
-                                <div class= "card-title">
-                                    <h2><i class="fas fa-project-diagram"></i> Artificial Intelligence</h2>
-                                </div>
-                                <figure class="card-img">
-                                    <img src="./assets/img/img_5.jpg" alt="imagen">
-                                    <figcaption>
-                                        <h3>AI Chatbot</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit id commodi, voluptatem aut, halor nobis maiores est aliquam modi vero sit vitae.
-                                    </figcaption>
-                                </figure>      
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Add Pagination -->
-            <div class="swiper-pagination"></div</div>
-            </section>
-            <!-- Title Ribbon Gallery -->
-            <div class="title-gallery">
-                <h1>Projects Gallery</h1>
-            </div>
-            <!-- Card Gallery -->
-            <section class="gallery">
-                <div class="card-container">
-                    <div class="choose-category">
-                        <nav class="nav-gallery">
-                            <div class="items">
-                                <span class="item active" data-name="all">All</span>
-                                <span class="item" data-name="ai">Artificial Intelligence</span>
-                                <span class="item" data-name="ds">Data Science</span>
-                                <span class="item" data-name="ml">Machine Learning</span>
-                                <span class="item" data-name="ln">Lenobit</span>
-                            </div>
-                        </nav>
-                    </div>
-                    <div class="card" data-name="ds">
-                        <div class= "card-title" id="ds">
-                            <h2><i class="fas fa-project-diagram"></i> Data Science</h2>
-                        </div>
-                        <figure class="card-img">
-                            <img src="./assets/img/img_1.jpg" alt="imagen">
-                            <figcaption>
-                                <h3>Debug Data</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit id commodi.
-                            </figcaption>
-                        </figure>    
-                    </div>
-                    <div class="card" data-name="ln">
-                        <div class= "card-title" id="ln">
-                            <h2><i class="fas fa-project-diagram"></i> Lenobit</h2>
-                        </div>
-                        <div class="card-video">
-                            <video src="./assets/video/Logo Firma.mp4"controls preload="auto"></video>
-                            <figcaption>
-                                <h3>Lenobit</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur adipisicfugiusantium architecto dolor.
-                            </figcaption>
-                        </div>
-                    </div>
-                    <div class="card" data-name="ai">
-                        <div class= "card-title" id="ai">
-                            <h2><i class="fas fa-project-diagram"></i> Artificial Intelligence</h2>
-                        </div>
-                        <figure class="card-img">
-                            <img src="./assets/img/img_3.jpg" alt="imagen">
-                            <figcaption>
-                                <h3>Stock Price Prediction</h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat porro voluptates numquam ducimus eos optio.
-                            </figcaption>
-                        </figure>   
-                    </div>
-                    <div class="card" data-name="ml">
-                        <div class= "card-title" id="ml">
-                            <h2><i class="fas fa-project-diagram"></i> Machine Learning</h2>
-                        </div>
-                        <figure class="card-img">
-                            <img src="./assets/img/img_4.jpg" alt="imagen">
-                            <figcaption>
-                                <h3>Hardware-Accelerated</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit id commodi.
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="card" data-name="ds">
-                        <div class= "card-title" id="ds">
-                            <h2><i class="fas fa-project-diagram"></i> Data Science</h2>
-                        </div>
-                        <figure class="card-img">
-                            <img src="./assets/img/img_5.jpg" alt="imagen">
-                            <figcaption>
-                                <h3>Graphics & Algorithms</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur bis maiores est aliquam modi vero sit vitae.
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="card" data-name="ln">
-                        <div class= "card-title" id="ln">
-                            <h2><i class="fas fa-project-diagram"></i> Lenobit</h2>
-                        </div>
-                        <figure class="card-img">
-                            <img src="./assets/img/img_6.jpg" alt="imagen">
-                            <figcaption>
-                                <h3>SHA256 Protocol</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur bis maiores est aliquam modi vero sit vitae.
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="card" data-name="ai">
-                        <div class= "card-title" id="ai">
-                            <h2><i class="fas fa-project-diagram"></i> Artificial Intelligence</h2>
-                        </div>
-                        <figure class="card-img">
-                            <img src="./assets/img/img_7.jpg" alt="imagen">
-                            <figcaption>
-                                <h3>Intelligent AI Chatbot</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo praesentium ipsa, vero doloribus veritatis harum.
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="card" data-name="ds">
-                        <div class= "card-title" id="ds">
-                            <h2><i class="fas fa-project-diagram"></i> Data Science</h2>
-                        </div>
-                        <figure class="card-img">
-                            <img src="./assets/img/img_8.jpg" alt="imagen">
-                            <figcaption>
-                                <h3>Business Model</h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla iste similique quisquam fuga rem! Hic pariatur ipsum.
-                            </figcaption>
-                        </figure>       
-                    </div>
-                    <div class="card" data-name="ml">
-                        <div class= "card-title" id="ml">
-                            <h2><i class="fas fa-project-diagram"></i> Machine Learning</h2>
-                        </div>
-                        <figure class="card-img">
-                            <img src="./assets/img/img_9.jpg" alt="imagen">
-                            <figcaption>
-                                <h3>Efficient Search</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur bis maiores est aliquam modi vero sit vitae.
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="card" data-name="ai">
-                        <div class= "card-title" id="ai">
-                            <h2><i class="fas fa-project-diagram"></i> Artificial Intelligence</h2>
-                        </div>
-                        <figure class="card-img">
-                            <img src="./assets/img/img_10.jpg" alt="imagen">
-                            <figcaption>
-                                <h3>Facial Recognition</h3>Este es el parrafo de la imagen Lorem ipsum dolor sit amet consectetur bis maiores est aliquam modi vero sit vitae.
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="card" data-name="ln">
-                        <div class= "card-title" id="ln">
-                            <h2><i class="fas fa-project-diagram"></i> Lenobit</h2>
-                        </div>
-                        <figure class="card-img">
-                            <img src="./assets/img/img_11.jpg" alt="imagen">
-                            <figcaption>
-                                <h3>Data Management</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo praesentium ipsa, vero doloribus veritatis harum.
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="card" data-name="ds">
-                        <div class= "card-title" id="ds">
-                            <h2><i class="fas fa-project-diagram"></i> Data Science</h2>
-                        </div>
-                        <figure class="card-img">
-                            <img src="./assets/img/img_12.jpg" alt="imagen">
-                            <figcaption>
-                                <h3>Predictive Models</h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla iste similique quisquam fuga rem! Hic pariatur ipsum.
-                            </figcaption>
-                        </figure>       
-                    </div>     
-                </div>
-             </section>
-        </main> 
-    </section>
-    <footer>
-        <div class="fixed-footer-container">
-            <div class="sec-about">
-                <h2>About me</h2>
-                <p>I'm Mechatronic Engineer with experience in technology projects management,  specially in food industry field, I'm passionate about 3D design in SolidWorks. Recently I'm working in a new technological field and I'm developing new projects in the area of Data Science, Machine Learning & Artificial Intelligence, if you want to know more...press to here <a href="#"><i class="fas fa-angle-double-right"></i></a>
-                </p>
-                <ul class="sci">
-                    <li>
-                        <a href="https://www.linkedin.com/in/felix-manuel-figueroa-3b91551b/"class="linkedin"><i class="fab fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/FMFigueroa" class="github"><i class="fab fa-github"></i></a>            
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/FelixM_Figueroa" class="twitter"><i class="fab fa-twitter-square"></i></a>          
-                    </li>
-                    <li>
-                        <a href="https://t.me/SolidworksArgentina" class="telegram"><i class="fab fa-telegram"></i></a>      
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/SolidworksArgentinaOfficial" class="facebook"> <i class="fab fa-facebook-square"></i></a>        
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/channel/UCl51r-34GpQtP6WpqAR844Q" class="youtube"><i class="fab fa-youtube"></i></a>     
-                    </li>                                                
-                </ul>
-            </div>
-            <hr id="center">
-            <div class="sec-quickLinks">
-                <h2>Quick Links</h2>
-                <ul>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Terms & Consitions</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <hr id="right">
-            <div class="sec-contact">
-                <h2>Contact Info</h2>
-                <ul class="info">
-                    <li>
-                        <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span>
-                        <span>Av. Directorio 1088 <br>
-                        Caballito, CP 1424, <br>Buenos Aires | Argentina.</span>
-                    </li>
-                    <li>
-                        <span><i class="fas fa-phone-volume" aria-hidden="true"></i></span>
-                        <p><a href="tel:+5491133851987">(+54) 911 - 33851987.</a><br></p>
-                    </li>
-                    <li>
-                        <span><i class="fas fa-envelope-open-text" aria-hidden="true"></i></span>
-                        <p><a href="mailto:felixmanuelfigueroa@gmail.com">felixmanuelfigueroa@gmail.com</a></p>
-                    </li>
-                </ul>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--===============Tab-Page ===============-->
+    <title>Portfoliio - Felix Figueroa</title>
+    <link rel="icon" href="./assets/img/logo.ico" />
+    <!--=============== REMIX ICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <i class="ri-bubble-chart-fill nav__logo-icon"></i> Felix Figueroa
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#gallery" class="nav__link">Gallery</a>
+            </li>
+            <li class="nav__item">
+              <a href="#faqs" class="nav__link">FAQs</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact me</a>
+            </li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
         </div>
+        <div class="nav__btns">
+          <!-- Theme change buttom -->
+          <i class="ri-moon-clear-line change-theme" id="theme-button"></i>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <img src="assets/img/avatar.png" alt="" class="home__img" />
+
+          <div class="home__data">
+            <h1 class="home__title">
+              Hello, Welcome<br />
+              My name's Felix<br />
+              How can I help you
+            </h1>
+            <h3>Full Stack Developer</h3>
+            <p class="home__description">
+              This my Portfolio, I hope you enjoy all my content and can help
+              you with new ideas, design without limits ..!
+            </p>
+            <a href="#about" class="button button--flex">
+              Explore <i class="ri-arrow-right-down-line button__icon"></i>
+            </a>
+          </div>
+
+          <div class="home__social">
+            <span class="home__social-follow">Follow Me</span>
+
+            <div class="home__social-links">
+              <a
+                href="https://www.linkedin.com/in/felix-manuel-figueroa-3b91551b/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+              <a
+                href="https://github.com/FMFigueroa"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-github-fill"></i>
+              </a>
+              <a
+                href="https://twitter.com/FelixM_Figueroa"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-twitter-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================== ABOUT ====================-->
+      <section class="about section container" id="about">
+        <div class="about__container grid">
+          <div class="about__dev">
+            <img src="assets/img/perfil.png" alt="" class="about__img" />
+            <br />
+            <br />
+            <h3 class="title__skills">Background as Developer:</h3>
+            <br />
+
+            <div class="about__details">
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Web Development.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Mobile App Development.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                API's Design & Microservices.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                PWA (Progressive Web Application).
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Unit Tests | Docker | Data Base.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Data Science, Machine Learnig & AI.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Blockchain.
+              </p>
+            </div>
+
+            <a href="#contact" class="button--link button--flex">
+              Contact Me <i class="ri-arrow-right-down-line button__icon"></i>
+            </a>
+          </div>
+          <div class="about__data">
+            <br />
+            <br />
+            <br />
+            <h2 class="section__title about__title">
+              Who I really am and <br />
+              to which I now dedicate myself.
+            </h2>
+
+            <p class="about__description">
+              I have more than 10 years experience as mechatronic engineer & 1
+              year of experience as full stack developer,<br />I trying to make
+              a career switch to software development.
+            </p>
+            <h3>Soft Skills:</h3>
+            <br />
+
+            <div class="about__details">
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Leadership and effective team communication.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Project management.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Team Leadership.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Scrum methodology.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Experience with Remote Job.
+              </p>
+            </div>
+            <br />
+            <a href="#projects" class="button--link button--flex">
+              View Projects
+              <i class="ri-arrow-right-down-line button__icon"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== TOP Projects ====================-->
+      <section class="card section container" id="projects">
+        <div class="card__bg">
+          <h2 class="section__title-center card__title">Top Projects</h2>
+          <div class="card__container grid">
+            <div class="card1">
+              <div class="card__inner1">
+                <div class="card__face card__face--front">
+                  <h3>Instagram Pro</h3>
+                  <img src="assets/img/product1.png" alt="" class="card__img" />
+                  <p>
+                    View Project
+                    <i class="ri-arrow-right-down-line button__icon"></i>
+                  </p>
+                </div>
+                <div class="card__face card__face--back">
+                  <h3>Instagram Pro</h3>
+                  <iframe
+                    width="300"
+                    height="300"
+                    src="https://www.youtube.com/embed/YPkQws_MUxM"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+
+                  <p id="title__desc">Brief Description :</p>
+                  <p>
+                    Instagram Pro is an App developed in React Native, it has
+                    authentication for user login, the validation of the form is
+                    with Yup + Formik, you can make a Post and store it in
+                    Firebase V9.
+                  </p>
+                  <a
+                    href="https://github.com/FMFigueroa/Instagram-Pro-Dark-React-Native"
+                    target="_blank"
+                    class="button--link"
+                    >Download Code<i
+                      class="ri-arrow-right-down-line button__icon"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="card2">
+              <div class="card__inner2">
+                <div class="card__face card__face--front">
+                  <h3>Ubar Eats</h3>
+                  <img src="assets/img/product2.png" alt="" class="card__img" />
+                  <p>
+                    View Project
+                    <i class="ri-arrow-right-down-line button__icon"></i>
+                  </p>
+                </div>
+                <div class="card__face card__face--back">
+                  <h3>Uber Eats</h3>
+                  <iframe
+                    width="300"
+                    height="300"
+                    src="https://www.youtube.com/embed/GqP2zqjy02A"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <p id="title__desc">Brief Description :</p>
+                  <p>
+                    Uber Eats is an App developed in React Native, it consumes
+                    the YELP API to locate restaurants, it has Google Search
+                    Autocomplete API and it manages its orders with Redux, all
+                    orders are stored in a Firestore DB.
+                  </p>
+                  <a
+                    href="https://github.com/FMFigueroa/Uber-Eats-Clone"
+                    target="_blank"
+                    class="button--link"
+                    >Download Code<i
+                      class="ri-arrow-right-down-line button__icon"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="card3">
+              <div class="card__inner3">
+                <div class="card__face card__face--front">
+                  <h3>Responsive Web Portfolio</h3>
+                  <img src="assets/img/product3.png" alt="" class="card__img" />
+                  <p>
+                    View Project
+                    <i class="ri-arrow-right-down-line button__icon"></i>
+                  </p>
+                </div>
+                <div class="card__face card__face--back">
+                  <h3>Responsive Web Portfolio</h3>
+                  <iframe
+                    width="300"
+                    height="300"
+                    src="https://www.youtube.com/embed/_c0mVmTBW_k?list=PLgvY5N8lmuPkQlVrdSL6xDidbV0UFEHJG"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <p id="title__desc">Brief Description :</p>
+                  <p>
+                    This was my first web page, with the three elementary
+                    technologies HTML, CSS and Javascript of Web design, it was
+                    thought to build my portfolio as a developer, I hope you
+                    like it ..!
+                  </p>
+                  <a
+                    href="https://github.com/FMFigueroa/Portfolio"
+                    target="_blank"
+                    class="button--link"
+                    >Download Code<i
+                      class="ri-arrow-right-down-line button__icon"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PRODUCTS ====================-->
+      <section class="product section container" id="gallery">
+          <h2 class="section__title-center">Projects Gallery</h2>
+        <p class="product__description">
+          Here are some selected projects from my repositories, all are finished
+          and tests. You can download it from GitHub if you like, enjoy it.
+        </p>
+        <div class="product__container grid">
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img src="assets/img/product1.png" alt="" class="product__img" />
+
+            <h3 class="product__title">Instagram Pro</h3>
+            <span class="product__price">Download Code</span>
+
+            <a
+              href="https://github.com/FMFigueroa/Instagram-Pro-Dark-React-Native"
+              class="button--flex product__button"
+            >
+              <i class="ri-github-fill"></i>
+            </a>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img src="assets/img/product2.png" alt="" class="product__img" />
+
+            <h3 class="product__title">Uber Eats</h3>
+            <span class="product__price">Download Code</span>
+
+            <a
+              href="https://github.com/FMFigueroa/Uber-Eats-Clone"
+              class="button--flex product__button"
+            >
+              <i class="ri-github-fill"></i>
+            </a>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img src="assets/img/product3.png" alt="" class="product__img" />
+
+            <h3 class="product__title">Old Portfolio</h3>
+            <span class="product__price">Download Code</span>
+
+            <a
+              href="https://github.com/FMFigueroa/Portfolio"
+              class="button--flex product__button"
+            >
+              <i class="ri-github-fill"></i>
+            </a>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img src="assets/img/product4.png" alt="" class="product__img" />
+
+            <h3 class="product__title">Uber Pro</h3>
+            <span class="product__price">Code Coming Soon</span>
+
+            <a
+              href="https://github.com/FMFigueroa/"
+              class="button--flex product__button"
+            >
+              <i class="ri-github-fill"></i>
+            </a>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img src="assets/img/product5.png" alt="" class="product__img" />
+
+            <h3 class="product__title">Opacity Liquid Swipe</h3>
+            <span class="product__price">Code Coming Soon</span>
+
+            <a
+              href="https://github.com/FMFigueroa/"
+              class="button--flex product__button"
+            >
+              <i class="ri-github-fill"></i>
+            </a>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img src="assets/img/product6.png" alt="" class="product__img" />
+
+            <h3 class="product__title">Avanced Liquid Swipe</h3>
+            <span class="product__price">Code Coming Soon</span>
+
+            <a
+              href="https://github.com/FMFigueroa/"
+              class="button--flex product__button"
+            >
+              <i class="ri-github-fill"></i>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== QUESTIONS ====================-->
+      <section class="questions section" id="faqs">
+        <h2 class="section__title-center questions__title container">
+          These are the technologies <br />that I use the most as a developer
+        </h2>
+
+        <div class="questions__container container grid">
+          <div class="questions__group">
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">Web Development:</h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  ✔ HTML & CSS.<br />
+                  ✔ JavaScript.<br />
+                  ✔ Bootstrap.<br />
+                  ✔ Sass.<br />
+                  ✔ Jquery.<br />
+                  ✔ Reactjs.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">BackEnd:</h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  ✔ Python.<br />
+                  ✔ Django.<br />
+                  ✔ Django Rest Framework.<br />
+                  ✔ Nodejs.<br />
+                  ✔ Typescript.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">DataBase:</h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  ✔ MySQL.<br />
+                  ✔ PostgreSQL.<br />
+                  ✔ Mongo DB.<br />
+                  ✔ Redis.<br />
+                  ✔ Firestore.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="questions__group">
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">Mobile App Development:</h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  ✔ Adobe xd.<br />
+                  ✔ React Native.<br />
+                  ✔ React Navigation.<br />
+                  ✔ Redux.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">API & Microservices:</h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  ✔ Nginx.<br />
+                  ✔ Unicorn.<br />
+                  ✔ Postman.<br />
+                  ✔ RabbitMQ.<br />
+                  ✔ Celery.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">Cloud service:</h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  ✔ Docker.<br />
+                  ✔ Firebase.<br />
+                  ✔ Google Cloud.<br />
+                  ✔ AWS.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section container" id="contact">
+        <div class="contact__container grid">
+          <div class="contact__box">
+            <h2 class="section__title">
+              Reach out to me today <br />
+              via any of the given <br />
+              information
+            </h2>
+
+            <div class="contact__data">
+              <div class="contact__information">
+                <h3 class="contact__subtitle">Call me for instant Contact</h3>
+                <span class="contact__description">
+                  <i class="ri-phone-line contact__icon"></i>
+                  +54 911 33851987
+                </span>
+              </div>
+
+              <div class="contact__information">
+                <h3 class="contact__subtitle">Write me by mail</h3>
+                <span class="contact__description">
+                  <i class="ri-mail-line contact__icon"></i>
+                  felixmanuelfigueroa@gmail.com
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form">
+            <div class="contact__inputs">
+              <div class="contact__content">
+                <input type="email" placeholder=" " class="contact__input" />
+                <label for="" class="contact__label">Email</label>
+              </div>
+
+              <div class="contact__content">
+                <input type="text" placeholder=" " class="contact__input" />
+                <label for="" class="contact__label">Subject</label>
+              </div>
+
+              <div class="contact__content contact__area">
+                <textarea
+                  name="message"
+                  placeholder=" "
+                  class="contact__input"
+                ></textarea>
+                <label for="" class="contact__label">Message</label>
+              </div>
+            </div>
+
+            <button class="button button--flex">
+              Send Message
+              <i class="ri-arrow-right-up-line button__icon"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">
+            <i class="ri-bubble-chart-fill nav__logo-icon"></i> Felix Figueroa
+          </a>
+
+          <h3 class="footer__title">
+            Subscribe to our newsletter <br />
+            to stay update
+          </h3>
+
+          <div class="footer__subscribe">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="footer__input"
+            />
+
+            <button class="button button--flex footer__button">
+              Subscribe
+              <i class="ri-arrow-right-up-line button__icon"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Country</h3>
+
+          <ul class="footer__data">
+            <li class="footer__information">
+              <i class="ri-map-pin-fill footer__social-link"></i>Caballito |
+              CP-1424.
+            </li>
+            <li class="footer__information">
+              <img
+                src="https://img.icons8.com/emoji/48/000000/argentina-emoji.png"
+              />CABA | Argentina.
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Contact Me</h3>
+
+          <ul class="footer__data">
+            <li class="footer__information">
+              <i class="ri-phone-line footer__social-link"></i> +54 911 33851987
+            </li>
+
+            <div class="footer__social">
+              <a
+                href="https://www.linkedin.com/in/felix-manuel-figueroa-3b91551b/"
+                class="footer__social-link"
+              >
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+              <a
+                href="https://github.com/FMFigueroa"
+                class="footer__social-link"
+              >
+                <i class="ri-github-fill"></i>
+              </a>
+              <a
+                href="https://twitter.com/FelixM_Figueroa"
+                class="footer__social-link"
+              >
+                <i class="ri-twitter-fill"></i>
+              </a>
+            </div>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Payments with<br />Cryptocurrencies</h3>
+
+          <div class="footer__cards">
+            <img src="assets/img/bitcoin.png" alt="" class="footer__card" />
+            <img src="assets/img/etherum.png" alt="" class="footer__card" />
+            <img src="assets/img/usdt.png" alt="" class="footer__card" />
+          </div>
+        </div>
+      </div>
+
+      <p class="footer__copy">
+        Copyright &#169; Felix Figueroa. All Rights Reserved.
+      </p>
     </footer>
-    <div class="copyrightText">
-        <p>Copyright © Felix Figueroa. All Rights Reserved.</p>
-    </div>
-    <!-- scripts -->
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/filter.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-    var swiper = new Swiper('.swiper-container', {
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        coverflowEffect: {
-        rotate: 0,
-        stretch: 30,
-        depth: 100,
-        modifier: 3,
-        slideShadows: true,
-        },
-        loop: true,
-        pagination: {
-        el: '.swiper-pagination',
-        },
-    });
-    </script> 
-</body>
+    <!--=============== SCROLL UP ===============-->
+    <a href="#home" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-fill scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
