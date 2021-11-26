@@ -436,6 +436,7 @@ the website, in dark theme
 
 .about__description{
   margin-bottom: var(--mb-2);
+  text-align: justify;
 }
 
 .about__details{
@@ -562,9 +563,6 @@ the website, in dark theme
   margin-left: 2rem; 
   align-self: start;
   color:var(--title-color-card);
-}
-.card__face--back video{
-  width:300px; 
 }
 .card__face--back a{
   display: inline-flex;
@@ -963,14 +961,9 @@ the website, in dark theme
   .home__title{
     font-size: var(--h1-font-size);
   }
-  
   .card__bg{
     padding: 2rem 0.5rem 2rem;
   }
-  .card__face--back video{
-    width:260px; 
-  }
-
   .product__container{
     grid-template-columns: .6fr;
     justify-content: center;
@@ -990,7 +983,6 @@ the website, in dark theme
     justify-content: center;
     column-gap: 5rem;
   }
-
   .footer__subscribe{
     width: 400px;
   }
