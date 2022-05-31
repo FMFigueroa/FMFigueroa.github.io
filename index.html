@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--===============Tab-Page ===============-->
-    <title>Portfoliio - Felix Figueroa</title>
+    <title>Welcome</title>
     <link rel="icon" href="./assets/img/logo.ico" />
     <!--=============== REMIX ICONS ===============-->
     <link
@@ -13,6 +13,9 @@
     />
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <!--=============== p5.js ===============-->
+    <script src="assets/js/p5.js"></script>
+    <script src="assets/js/sketch.js"></script>
   </head>
   <body>
     <!--==================== HEADER ====================-->
@@ -59,20 +62,26 @@
     <main class="main">
       <!--==================== HOME ====================-->
       <section class="home" id="home">
+        <div class="video__background">
+          <video autoplay loop muted preload="auto">
+            <source src="assets/img/video.mp4" type="video/mp4" />
+          </video>
+        </div>
         <div class="home__container container grid">
           <img src="assets/img/avatar.png" alt="" class="home__img" />
 
           <div class="home__data">
-            <h1 class="home__title">
+            <h1 class="home__title color-font">
               Hello, Welcome<br />
               My name's Felix<br />
               How can I help you
             </h1>
-            <h3>Full Stack Developer</h3>
-            <p class="home__description">
+            <h3 class="color-font">R&D Engineer</h3>
+            <p class="home__description color-font">
               This my Portfolio, I hope you enjoy all my content and can help
               you with new ideas, design without limits ..!
             </p>
+
             <a href="#about" class="button button--flex">
               Explore <i class="ri-arrow-right-down-line button__icon"></i>
             </a>
@@ -111,32 +120,30 @@
       <section class="about section container" id="about">
         <div class="about__container grid">
           <div class="about__dev">
-            <img src="assets/img/perfil.png" alt="" class="about__img" />
-            <br />
-            <br />
-            <h3 class="title__skills">Background as Developer:</h3>
+            <div class="canvas" id="sketch-holder"></div>
+            <h3 class="title__skills">Background as Engineer:</h3>
             <br />
 
             <div class="about__details">
               <p class="about__details-description">
                 <i class="ri-checkbox-fill about__details-icon"></i>
-                Web Development.
+                Industrial Automation with Siemens.
               </p>
               <p class="about__details-description">
                 <i class="ri-checkbox-fill about__details-icon"></i>
-                Mobile App Development.
+                Embedded Systems C, C++, Rust.
               </p>
               <p class="about__details-description">
                 <i class="ri-checkbox-fill about__details-icon"></i>
-                API's Design & Microservices.
+                Design CAD & CAE with Solidworks.
               </p>
               <p class="about__details-description">
                 <i class="ri-checkbox-fill about__details-icon"></i>
-                PWA (Progressive Web Application).
+                Web Development & Mobile FullStack.
               </p>
               <p class="about__details-description">
                 <i class="ri-checkbox-fill about__details-icon"></i>
-                Unit Tests | Docker | Data Base.
+                Blockchain | DataScience | AI.
               </p>
               <p class="about__details-description">
                 <i class="ri-checkbox-fill about__details-icon"></i>
@@ -144,7 +151,7 @@
               </p>
               <p class="about__details-description">
                 <i class="ri-checkbox-fill about__details-icon"></i>
-                Blockchain.
+                Internet of Things | Robotic.
               </p>
             </div>
 
@@ -152,6 +159,7 @@
               Contact Me <i class="ri-arrow-right-down-line button__icon"></i>
             </a>
           </div>
+
           <div class="about__data">
             <br />
             <br />
@@ -161,10 +169,12 @@
             </h2>
 
             <p class="about__description">
-              I'm an Electronic Engineer with experience in project managment,
-              I'm trying to make a career switch towards software development. I
-              have been working on a wide variety of projects, ranging from
-              websites to blockchain systems.
+              I'm Electronic Engineer specialized in the field of Technology and
+              the Industrial Automation, Embedded Systems with C, C++, Rust, PCB
+              Design, PLC Programming, Design CAD & CAE with Solidworks ,Web
+              Development & Mobile FullStack, Software Architecture &
+              Microservices, Web3, AI, Product Design focused on the internet of
+              things.
             </p>
             <h3>Soft Skills:</h3>
             <br />
@@ -172,23 +182,23 @@
             <div class="about__details">
               <p class="about__details-description">
                 <i class="ri-checkbox-fill about__details-icon"></i>
-                Leadership and effective team communication.
+                Effective time management.
               </p>
               <p class="about__details-description">
                 <i class="ri-checkbox-fill about__details-icon"></i>
-                Project management.
+                Effective communication.
               </p>
               <p class="about__details-description">
                 <i class="ri-checkbox-fill about__details-icon"></i>
-                Team Leadership.
+                Agile methodologies such as Scrum with ClickUp.
               </p>
               <p class="about__details-description">
                 <i class="ri-checkbox-fill about__details-icon"></i>
-                Scrum methodology.
+                Proactive and motivational attitude.
               </p>
               <p class="about__details-description">
                 <i class="ri-checkbox-fill about__details-icon"></i>
-                Experience with Remote Job.
+                Passion so that I doing.
               </p>
             </div>
 
@@ -203,7 +213,7 @@
       <!--==================== TOP Projects ====================-->
       <section class="card section container" id="projects">
         <div class="card__bg">
-          <h2 class="section__title-center card__title">Top Projects</h2>
+          <h2 class="section__title-center card__title">Projects</h2>
           <div class="card__container grid">
             <div class="card1">
               <div class="card__inner1">
@@ -439,7 +449,7 @@
       <!--==================== QUESTIONS ====================-->
       <section class="questions section" id="faqs">
         <h2 class="section__title-center questions__title container">
-          These are the technologies <br />that I use the most as a developer
+          These are the technologies <br />that I use the most as R&D Engineer
         </h2>
 
         <div class="questions__container container grid">
@@ -447,17 +457,17 @@
             <div class="questions__item">
               <header class="questions__header">
                 <i class="ri-add-line questions__icon"></i>
-                <h3 class="questions__item-title">Web Development:</h3>
+                <h3 class="questions__item-title">Electronic Engineer:</h3>
               </header>
 
               <div class="questions__content">
                 <p class="questions__description">
-                  ✔ HTML & CSS.<br />
-                  ✔ JavaScript.<br />
-                  ✔ Bootstrap.<br />
-                  ✔ Tailwind<br />
-                  ✔ React.js<br />
-                  ✔ Next.js.
+                  ✔ Matlab.<br />
+                  ✔ Proteus.<br />
+                  ✔ Multisim<br />
+                  ✔ CAM350<br />
+                  ✔ Altium<br />
+                  ✔ C, C++, Linux, Rust
                 </p>
               </div>
             </div>
@@ -465,14 +475,15 @@
             <div class="questions__item">
               <header class="questions__header">
                 <i class="ri-add-line questions__icon"></i>
-                <h3 class="questions__item-title">BackEnd:</h3>
+                <h3 class="questions__item-title">Project Engineer:</h3>
               </header>
 
               <div class="questions__content">
                 <p class="questions__description">
-                  ✔ Redux.<br />
-                  ✔ Django.<br />
-                  ✔ Nodejs.<br />
+                  ✔ ClickUp.<br />
+                  ✔ AutoCAD.<br />
+                  ✔ Solidworks.<br />
+                  ✔ TIA Portal Siemens.<br />
                 </p>
               </div>
             </div>
@@ -486,9 +497,13 @@
               <div class="questions__content">
                 <p class="questions__description">
                   ✔ Mongodb.<br />
-                  ✔ Firestore. ✔ MySQL.<br />
+                  ✔ Firebase.<br />
+                  ✔ MySQL.<br />
                   ✔ PostgreSQL.<br />
                   ✔ Redis.<br />
+                  ✔ AWS S3.<br />
+                  ✔ Azure.<br />
+                  ✔ Linux.<br />
                 </p>
               </div>
             </div>
@@ -498,15 +513,24 @@
             <div class="questions__item">
               <header class="questions__header">
                 <i class="ri-add-line questions__icon"></i>
-                <h3 class="questions__item-title">Mobile App Development:</h3>
+                <h3 class="questions__item-title">Web & Mobile Development:</h3>
               </header>
 
               <div class="questions__content">
                 <p class="questions__description">
                   ✔ Adobe xd.<br />
-                  ✔ React Native.<br />
-                  ✔ React Navigation.<br />
-                  ✔ Redux.
+                  ✔ Git & GitHub.<br />
+                  ✔ Html, CSS, Javascript.<br />
+                  ✔ Bootstrap, Tailwind.<br />
+                  ✔ React | React Native.<br />
+                  ✔ Typescript.<br />
+                  ✔ Redux.<br />
+                  ✔ Next.js. | Next-Auth.<br />
+                  ✔ Node.js. | Express.<br />
+                  ✔ Postman.<br />
+                  ✔ Django.<br />
+                  ✔ Nginx.<br />
+                  ✔ Unicorn.<br />
                 </p>
               </div>
             </div>
@@ -514,16 +538,23 @@
             <div class="questions__item">
               <header class="questions__header">
                 <i class="ri-add-line questions__icon"></i>
-                <h3 class="questions__item-title">Additional Knowledge:</h3>
+                <h3 class="questions__item-title">Web3 | AI:</h3>
               </header>
 
               <div class="questions__content">
                 <p class="questions__description">
-                  ✔ Typescript <br />
                   ✔ Python.<br />
-                  ✔ Redux.<br />
-                  ✔ Postman.<br />
-                  ✔ Git & GitHub.
+                  ✔ TensorFlow.<br />
+                  ✔ PyTorch.<br />
+                  ✔ TensorFlow.<br />
+                  ✔ Solidity.<br />
+                  ✔ OpenZeppelin.<br />
+                  ✔ Hardhat.<br />
+                  ✔ Infura.<br />
+                  ✔ Alchemy.<br />
+                  ✔ Sanity.<br />
+                  ✔ Thirdweb.<br />
+                  ✔ Chakra.<br />
                 </p>
               </div>
             </div>
@@ -531,15 +562,19 @@
             <div class="questions__item">
               <header class="questions__header">
                 <i class="ri-add-line questions__icon"></i>
-                <h3 class="questions__item-title">Cloud service:</h3>
+                <h3 class="questions__item-title">Microservices & Devops :</h3>
               </header>
 
               <div class="questions__content">
                 <p class="questions__description">
                   ✔ Docker.<br />
-                  ✔ Firebase.<br />
+                  ✔ Kubernetes.<br />
+                  ✔ AWS.<br />
+                  ✔ Azure.<br />
                   ✔ Google Cloud.<br />
-                  ✔ Vercel.
+                  ✔ Prometheus.<br />
+                  ✔ Grafana.<br />
+                  ✔ Linux.
                 </p>
               </div>
             </div>
@@ -558,14 +593,6 @@
             </h2>
 
             <div class="contact__data">
-              <div class="contact__information">
-                <h3 class="contact__subtitle">Call me for instant Contact</h3>
-                <span class="contact__description">
-                  <i class="ri-phone-line contact__icon"></i>
-                  +54 911 33851987
-                </span>
-              </div>
-
               <div class="contact__information">
                 <h3 class="contact__subtitle">Write me by mail</h3>
                 <span class="contact__description">
@@ -635,18 +662,13 @@
         </div>
 
         <div class="footer__content">
-          <h3 class="footer__title">Country</h3>
+          <h3 class="footer__title">Work modality</h3>
 
           <ul class="footer__data">
             <li class="footer__information">
-              <i class="ri-map-pin-fill footer__social-link"></i>Caballito |
-              CP-1424.
+              <i class="ri-map-pin-fill footer__social-link"></i>Remote
             </li>
-            <li class="footer__information">
-              <img
-                src="https://img.icons8.com/emoji/48/000000/argentina-emoji.png"
-              />CABA | Argentina.
-            </li>
+            <li class="footer__information"></li>
           </ul>
         </div>
 
@@ -654,10 +676,6 @@
           <h3 class="footer__title">Contact Me</h3>
 
           <ul class="footer__data">
-            <li class="footer__information">
-              <i class="ri-phone-line footer__social-link"></i> +54 911 33851987
-            </li>
-
             <div class="footer__social">
               <a
                 href="https://www.linkedin.com/in/felix-manuel-figueroa-3b91551b/"
