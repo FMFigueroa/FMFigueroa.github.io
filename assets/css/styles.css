@@ -447,6 +447,7 @@ the website, in dark theme
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
 }
 
 .about__title {
@@ -984,6 +985,9 @@ the website, in dark theme
   .home__title {
     font-size: var(--h1-font-size);
   }
+  .canvas .p5Canvas{
+    max-width: 280px;
+   }
   .card__bg {
     padding: 2rem 0.5rem 2rem;
   }
@@ -992,9 +996,22 @@ the website, in dark theme
     justify-content: center;
   }
 }
+@media screen  and (min-width: 321px) and (max-width: 575px) {
+  .canvas .p5Canvas{
+   max-width: 300px;
+  }
+}
+
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
+  .canvas .p5Canvas{
+    max-width: 300px;
+
+  }
+  .about__data{
+    max-width: 300px;
+  }
   .card__container {
     grid-template-columns: repeat(2, 1fr);
   }
