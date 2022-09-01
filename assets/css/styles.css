@@ -115,10 +115,6 @@ a {
 img {
   max-width: 100%;
 }
-video {
-  width: 100%;
-  height: 100%;
-}
 
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
@@ -171,6 +167,9 @@ the website, in dark theme
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 5.5rem 0 1rem;
+}
+.section_main {
+  padding: 3rem 0 0rem;
 }
 
 .section__title,
@@ -318,7 +317,7 @@ the website, in dark theme
 .home {
   padding: 3.5rem 0 0 0;
 }
-.video__background {
+.video__play {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -326,6 +325,8 @@ the website, in dark theme
   left: 0px;
   z-index: -1;
 }
+
+
 
 .home__container {
   position: relative;
@@ -985,6 +986,14 @@ the website, in dark theme
   .home__title {
     font-size: var(--h1-font-size);
   }
+  .video__play {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    top: 10px;
+    left: 0px;
+    z-index: -1;
+  }
   .canvas .p5Canvas{
     max-width: 280px;
    }
@@ -1000,11 +1009,27 @@ the website, in dark theme
   .canvas .p5Canvas{
    max-width: 300px;
   }
+  .video__play {
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
 }
 
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
+  .video__play {
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
   .canvas .p5Canvas{
     max-width: 300px;
 
@@ -1043,7 +1068,7 @@ the website, in dark theme
   }
   .nav__list {
     flex-direction: row;
-    column-gap: 3rem;
+    column-gap: 2.5rem;
   }
   .nav__menu {
     margin-left: auto;
@@ -1060,12 +1085,12 @@ the website, in dark theme
   .home {
     padding: 10rem 0 5rem;
   }
-  .video__background {
-    position: absolute;
+  .video__play {
     width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
+    height: 550px;
+    object-fit:cover;
+    top: 0px;
+    left: 0px;
     z-index: -1;
   }
 
@@ -1112,6 +1137,14 @@ the website, in dark theme
   .home {
     padding: 13rem 0 5rem;
     margin: 0 !important;
+  }
+  .video__play {
+    width: 100%;
+    height: 800px;
+    object-fit:cover;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
   }
 
   .home__img {
@@ -1180,13 +1213,13 @@ the website, in dark theme
     grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
   }
   .footer__copy {
-    margin: 7rem 0 2rem;
+    margin: 7rem 0 1rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .home__social {
-    right: -3rem;
+    right: -8rem;
     row-gap: 4.5rem;
   }
   .home__social-follow {
@@ -1199,7 +1232,14 @@ the website, in dark theme
   .home__social-link {
     font-size: 2rem;
   }
-
+  .video__play {
+    width: 100%;
+    height: 700px;
+    object-fit:cover;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
   .about__container {
     column-gap: 7rem;
   }
