@@ -261,6 +261,7 @@ the website, in dark theme
     transition: 0.5s;
     z-index: var(--z-fixed);
   }
+  
 }
 
 .nav__close {
@@ -668,6 +669,7 @@ the website, in dark theme
 /*=============== QUESTIONS ===============*/
 .questions {
   background-color: var(--first-color-lighten);
+  border-radius: 4px;
 }
 
 .questions__container {
@@ -935,13 +937,13 @@ the website, in dark theme
 .scrollup {
   position: fixed;
   background-color: var(--first-color);
-  right: 4rem;
+  right: 1rem;
   bottom: -30%;
   display: inline-flex;
   padding: 0.5rem;
   border-radius: 0.25rem;
   z-index: var(--z-tooltip);
-  opacity: 0.8;
+  opacity: 0.6;
   transition: 0.4s;
 }
 
@@ -957,7 +959,7 @@ the website, in dark theme
 
 /* Show Scroll Up*/
 .show-scroll {
-  bottom: 3rem;
+  bottom: 1rem;
 }
 
 /*=============== SCROLL BAR ===============*/
@@ -978,19 +980,24 @@ the website, in dark theme
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
-
-  .home__img {
-    width: 180px;
-  }
-
   .home__title {
     font-size: var(--h1-font-size);
   }
+  
+  .home {
+    padding: 2rem 0 5rem;
+  }
+
+  .home__img {
+    margin-top: 20px;
+    width: 200px;
+  }
+
   .video__play {
-    position: absolute;
-    width: 100%;
-    height: 400px;
-    top: 10px;
+    width:100vw;
+    height: 300px;
+    object-fit:cover;
+    top: 0px;
     left: 0px;
     z-index: -1;
   }
@@ -1009,16 +1016,24 @@ the website, in dark theme
   .canvas .p5Canvas{
    max-width: 300px;
   }
+  .home {
+    padding: 2rem 0 5rem;
+  }
+
+  .home__img {
+    margin-top: 20px;
+    width: 200px;
+  }
+  
   .video__play {
-    position: absolute;
-    height: 400px;
-    width: 100%;
+    width:100vw;
+    height: 300px;
+    object-fit:cover;
     top: 0px;
     left: 0px;
     z-index: -1;
   }
 }
-
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
@@ -1060,7 +1075,7 @@ the website, in dark theme
 
   .nav {
     height: calc(var(--header-height) + 1.5rem);
-    column-gap: 3rem;
+    column-gap: 0.5rem;
   }
   .nav__toggle,
   .nav__close {
@@ -1191,10 +1206,11 @@ the website, in dark theme
   }
 
   .questions__container {
-    padding: 1rem 0 4rem;
+    padding: 1rem 2rem 4rem;
+    
   }
   .questions__title {
-    text-align: initial;
+    text-align:center;
   }
   .questions__group {
     row-gap: 2rem;
