@@ -7,4 +7,4 @@ Im Mechatronic Engineer with experience in technology projects management, I'm p
 > Blockchain Systems and
 > Artificial Intelligence
 
-If you want to know more ... `visit me` : <https://fmfigueroa.github.io/Portfolio/>
+If you want to know more ... `visit me` : <https://fmfigueroa.github.io/>
